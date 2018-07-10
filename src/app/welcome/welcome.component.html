@@ -1,0 +1,150 @@
+<div class="pad-main">
+  <div class="row">
+    <div class="no-padding" [ngClass]="{ 'col-xl-6 col-lg-6 col-md-6 col-sm-12': sideNavOpen, 'col-xl-12 col-lg-12 col-md-12 col-sm-12': !sideNavOpen }">
+      <div class="inner-main">
+        <div class="description-box">
+          <h1 class="des-box-head">
+            Some Name
+          </h1>
+          <br>
+          <br>
+          <br>
+          <p class="des-box-body">
+            Some Description or a very cool tag line. It can be long or short depending on the taste. But since I wanted it to be atleast
+            a small para I will keep writing stuff in it. Whether you like it or not a small description is omething everyone
+            loves on a web page. So Now I am gonna stop because I think it is big enough.
+          </p>
+          <div class="row">
+            <div [ngClass]="{ 'col-xl-3 col-lg-12 col-md-12 col-sm-12': sideNavOpen, 'col-xl-3 col-lg-2 col-md-4 col-sm-12': !sideNavOpen }"
+              class="no-padding">
+              <div class="row">
+                <div [ngClass]="{ 'col-xl-8 col-lg-12 col-md-12 col-sm-12': sideNavOpen, 'col-xl-8 col-lg-8 col-md-8 col-sm-12': !sideNavOpen }"
+                  class="no-padding">
+                  <button type="button" class="btn-login-main" (click)="hideShow()">
+                    Login
+                  </button>
+                </div>
+                <div [ngClass]="{ 'col-xl-4 col-lg-12 col-md-12 col-sm-12': sideNavOpen, 'col-xl-4 col-lg-4 col-md-4 col-sm-12': !sideNavOpen }"
+                  class="no-padding">
+                  <p class="login-condition-p">or</p>
+                </div>
+              </div>
+            </div>
+            <div [ngClass]="{ 'col-xl-8 col-lg-12 col-md-12 col-sm-12': sideNavOpen, 'col-xl-8 col-lg-8 col-md-8 col-sm-12': !sideNavOpen }"
+              class="no-padding">
+              <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-4 col-sm-6 col-xs-6 no-padding">
+                  <input class="login-guest-text-box" placeholder="email / phone" type="text">
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-6 col-xs-6 no-padding">
+                  <button type="button" class="btn-login-guest" (click)="hideShow()">
+                    Login as guest
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="sideNavOpen" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 no-padding">
+      <app-login></app-login>
+    </div>
+  </div>
+</div>
+<div class="pad-second-main">
+  <div class="step-container">
+    <h3 class="step-heading">
+      Following a simple three step process.
+    </h3>
+    <div class="row">
+      <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 no-padding step-button-container">
+        <button class="step-button">
+          1
+        </button>
+        <p class="smaller-text">Someone will pick your order</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 no-padding step-button-container">
+        <div class="step-divider">
+
+        </div>
+        <p class="smaller-text">Some</p>
+        <div class="step-divider-bottom">
+
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 no-padding step-button-container">
+        <button class="step-button middle-button">
+          2
+        </button>
+        <p class="smaller-text">We will be faboulous here and do everything</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 no-padding step-button-container">
+        <div class="step-divider">
+
+        </div>
+        <p class="smaller-text">Some...............................................</p>
+        <div class="step-divider-bottom">
+
+        </div>
+      </div>
+      <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 no-padding step-button-container">
+        <button class="step-button">
+          3
+        </button>
+        <p class="smaller-text">Someone will drop your order</p>
+      </div>
+    </div>
+  </div>
+  <div class="do-container">
+    <h3>
+      What do we do?
+    </h3>
+    <div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="do-ans-container">
+            <div>
+              <h6>
+                Something
+              </h6>
+            </div>
+            <div>
+              <p>
+                Description of something
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="do-ans-container">
+            <div>
+              <h6>
+                Something
+              </h6>
+            </div>
+            <div>
+              <p>
+                Description of something
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="do-ans-container">
+            <div>
+              <h6>
+                Something
+              </h6>
+            </div>
+            <div>
+              <p>
+                Description of something
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

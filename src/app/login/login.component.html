@@ -1,0 +1,62 @@
+<div class="login-main">
+  <div class="row login-signup-row no-padding">
+    <div [ngClass]="{ ' login-signup-head-active': loginActive, ' login-signup-head': !loginActive}" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center no-padding"
+      (click)="toggleLoginSignUp();">
+      <h4>
+        Login
+      </h4>
+    </div>
+    <div [ngClass]="{ ' login-signup-head-active': !loginActive, ' login-signup-head': loginActive}" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center login-signup-head no-padding"
+      (click)="toggleLoginSignUp();">
+      <h4>
+        Sign Up
+      </h4>
+    </div>
+  </div>
+  <div class="login-signup-body">
+    <div *ngIf="loginActive">
+      <form action="">
+        <div class="input-grouper">
+          <span class="icon-container">
+            <fa class="fa" name="user-circle-o" ></fa>
+          </span>
+          <input class="padding-left-20" type="text" placeholder="username*" name="usernameLogin" id="usernameLogin">
+        </div>
+        <div class="input-grouper">
+          <span class="icon-container">
+            <fa class="fa" name="lock" ></fa>
+          </span>
+          <input type="password" placeholder="password*" name="passwordLogin" id="passwordLogin">
+        </div>
+        <div class="margin-bottom-5">
+          <input type="button" value="Login">
+        </div>
+      </form>
+    </div>
+    <div *ngIf="!loginActive">
+      <form action="">
+        <div class="input-grouper">
+            <span class="icon-container">
+              <fa class="fa" name="user-circle-o"></fa>
+            </span>
+          <input type="text" placeholder="username*" name="usernameSignUp" id="usernameSignUp">
+        </div>
+        <div class="input-grouper">
+            <span class="icon-container">
+              <fa class="fa" name="mobile-phone"></fa>
+            </span>
+          <input type="tel" placeholder="number*" name="numberSignUp" id="numberSignUp">
+        </div>
+        <div class="input-grouper">
+            <span class="icon-container">
+              <fa class="fa" name="lock"></fa>
+            </span>
+          <input type="password" placeholder="password*" name="passwordSignUp" id="passwordSignUp">
+        </div>
+        <div class="margin-bottom-5">
+          <input type="button" value="Sign up">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
